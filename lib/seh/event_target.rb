@@ -21,7 +21,7 @@ module Seh
     # Override #observers as needed.
     # @return [EventTarget] - array of other EventTargets observing this EventTarget
     def observers
-      []
+      @observers ||= []
     end
 
     # @private
